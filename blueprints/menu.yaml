@@ -1,0 +1,22 @@
+title: Menu
+@extends:
+    type: article
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        header.menu:
+          type: tab
+          title: ✴ Menu
+          icon: folder
+          text: Enter details for this Menu
+
+          fields:
+
+            .notes:
+              type: textarea
+              label: Notes
+              help: Notes about this Menu
+              size: medium
