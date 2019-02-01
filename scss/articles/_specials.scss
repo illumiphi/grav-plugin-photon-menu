@@ -1,0 +1,14 @@
+// default style for an article
+// start with a single column grid
+// top children have named grid areas
+
+article.specials {
+
+  text-align: center;
+  .logo {
+    width: 5em;
+    height: auto;
+    margin: 0 auto;
+  }
+
+}

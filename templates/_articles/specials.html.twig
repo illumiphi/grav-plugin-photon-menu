@@ -1,0 +1,25 @@
+
+
+<!-- user/plugins/photon-{{ page.template }}/templates/_articles/{{ page.template }}.html.twig -->
+<article class="{{ article.template }}" data-url="{{ article.url }}">
+  <img class="logo" src="/images/ona-banner.png" alt="logo">
+  <h1>
+    {%- if article.active %}
+      {{ article.title }}
+    {%- else %}
+      <a href="{{ article.url }}">{{ article.title }}</a>
+    {%- endif %}
+  </h1>
+
+  {% if article.header.subtitle %}
+  <h2>{{ article.header.subtitle }}</h2>
+  {% endif %}
+
+  <div class="content">
+    {% if article.summary %}
+    <div class="summary">
+      {{ article.summary }}
+    </div>
+    {% endif %}
+  </div>
+</article>

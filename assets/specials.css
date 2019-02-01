@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* photon ✴ menu Components and Templates */
+/* articles/menu *****************************/
+article.specials { text-align: center; }
+article.specials .logo { width: 5em; height: auto; margin: 0 auto; }
+
+/* templates/specials *****************************/
+
+/*# sourceMappingURL=specials.css.map */

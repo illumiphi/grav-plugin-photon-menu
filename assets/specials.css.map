@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,4CAA4C;AAI5C,+CAA+C;ACA/C,gBAAiB,GAEf,UAAU,EAAE,MAAM;AAClB,sBAAM,GACJ,KAAK,EAAE,GAAG,EACV,MAAM,EAAE,IAAI,EACZ,MAAM,EAAE,MAAM;;ADJlB,oDAAoD",
+"sources": ["../scss/specials.scss","../scss/articles/_specials.scss"],
+"names": [],
+"file": "specials.css"
+}

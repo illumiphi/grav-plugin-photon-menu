@@ -7,7 +7,7 @@ form:
   fields:
     tabs:
       fields:
-        header.menu:
+        header.data.menu:
           type: tab
           title: ✴ Menu
           icon: folder
@@ -15,8 +15,8 @@ form:
 
           fields:
 
-            .notes:
-              type: textarea
-              label: Notes
-              help: Notes about this Menu
+            .price:
+              type: text
+              label: Price
+              help: Price for this Menu
               size: medium

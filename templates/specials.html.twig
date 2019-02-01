@@ -1,0 +1,20 @@
+{% extends 'article.html.twig' %}
+{% block body_template_classes %}{{ parent() }} specials{% endblock body_template_classes %}
+
+
+{% block main %}
+  <main data-collection="{{ page.collection.count }}">
+    {% block content %}
+      {% include ["_articles/#{ page.template }.html.twig", "_articles/article.html.twig"] with { 'article': page } %}
+
+      {% block collection %}
+        <section class="collection">
+          {% for article in page.collection %}
+              {% include ["_articles/#{ article.template }-excerpt.html.twig", "_articles/article-excerpt.html.twig"] with { 'article': article } %}
+          {% endfor %}
+
+        </section>
+      {% endblock collection %}
+    {% endblock content %}
+</main>
+{% endblock main %}
