@@ -104,6 +104,37 @@ class PhotonMenuPlugin extends Plugin
           $assets->addJs($js, 100, false, 'defer', 'photon-plugins' );
         }
       }
+
+      if ($page->template() == 'specials-2up') {
+
+        if ($this->config->get('plugins.photon-menu.built_in_css')) {
+          $css = 'plugin://photon-menu/assets/specials.css';
+          $assets->addCss($css, 100, false, 'photon-plugins' );
+          $css = 'plugin://photon-menu/assets/specials-2up.css';
+          $assets->addCss($css, 100, false, 'photon-plugins' );
+        }
+
+        if ($this->config->get('plugins.photon-menu.built_in_js')) {
+          $js = 'plugin://photon-menu/assets/specials.js';
+          $assets->addJs($js, 100, false, 'defer', 'photon-plugins' );
+        }
+      }
+
+      if ($page->template() == 'specials-3up') {
+
+        if ($this->config->get('plugins.photon-menu.built_in_css')) {
+          $css = 'plugin://photon-menu/assets/specials.css';
+          $assets->addCss($css, 100, false, 'photon-plugins' );
+          $css = 'plugin://photon-menu/assets/specials-3up.css';
+          $assets->addCss($css, 100, false, 'photon-plugins' );
+        }
+
+        if ($this->config->get('plugins.photon-menu.built_in_js')) {
+          $js = 'plugin://photon-menu/assets/specials.js';
+          $assets->addJs($js, 100, false, 'defer', 'photon-plugins' );
+        }
+      }
+
     }
 
 }

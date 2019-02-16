@@ -1,0 +1,17 @@
+/* photon ✴ menu Components and Templates */
+
+@import '../../../themes/photon/scss/_media/var-18em';
+@import '../../../themes/photon/scss/_media/functions';
+@import '../../../themes/photon/scss/_media/mixins';
+
+// set defaults from simplest to most complex
+
+/* articles/menu *****************************/
+@import 'articles/specials';
+/* templates/specials *****************************/
+@import 'templates/specials';
+@import 'templates/specials-2up';
+
+@media print {
+
+}

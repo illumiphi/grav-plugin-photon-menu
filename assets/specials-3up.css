@@ -32,4 +32,13 @@ body.specials > main > .panel > article > .content > .summary > ul > li:last-chi
 body.specials > main footer { padding: 0; text-align: center; }
 body.specials > main footer p { text-align: center; }
 
-/*# sourceMappingURL=specials.css.map */
+@page { margin: 0; size: 11in 8.5in; }
+html { font-size: 12pt; line-height: 1.25em; }
+
+body.specials-3up { width: 11in; height: 8.5in; margin: 0 auto; padding: 0; }
+body.specials-3up main { width: 11in; height: 8.5in; }
+body.specials-3up main .panel { border: none; width: calc(11in/3); height: 8.5in; display: flex; flex-flow: column nowrap; }
+@media (min-width: 72em) { body.specials-3up { display: flex; } }
+@media (min-width: 90em) { @supports (display: grid) { body.specials-3up > main { display: flex; } } }
+
+/*# sourceMappingURL=specials-3up.css.map */

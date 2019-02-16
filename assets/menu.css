@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /* photon ✴ menu Components and Templates */
 /* articles/menu *****************************/
+article.menu .name { font-weight: bold; font-style: normal; }
+article.menu .loc { font-variant: small-caps; font-style: normal; font-size: 11pt; }
+article.menu .loc::after { content: ' • '; }
+article.menu .abv { font-variant: small-caps; font-style: normal; }
+article.menu .abv::after { content: 'abv'; padding-left: .1em; }
+article.menu .recipe { display: none; }
+
 /* templates/menu *****************************/
 
 /*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,102 @@
+
+//default - mobile first
+
+@page {
+  margin: 0;
+  size: 11in 8.5in;
+}
+
+html {
+  font-size: 12pt;
+  line-height: 1.25em;
+  // background-color: #EEE;
+}
+
+body.specials-3up {
+  width: 11in;
+  height: 8.5in;
+
+  margin: 0 auto;
+  padding: 0;
+  
+  main {
+    width: 11in;
+    height: 8.5in;
+
+    .panel {
+      border: none;
+      width: calc(11in/3);
+      height: 8.5in;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+  }
+
+  @include media-bp(3) {
+
+
+      display: flex;
+      // grid-template-areas:
+      //   " header main "
+      //   " asides main "
+      //   " asides footer ";
+      // grid-template-columns: var(--col)   1fr;
+      // grid-template-rows: auto 1fr auto;
+
+      > header {
+        // grid-area: header;
+
+        // height: auto; //remove initial fixed height
+
+        // flex-direction: column;
+
+        > .logo {
+        }
+
+        > nav {
+
+        }
+      }
+
+      > main {
+        // grid-area: main;
+      }
+
+      > .asides {
+        // grid-area: asides;
+        // justify-content: flex-start;
+      }
+
+      > footer {
+        // grid-area: footer;
+      }
+
+
+  }
+
+  @include media-bp(4) {
+
+    @supports (display: grid) {
+
+      > main {
+        display: flex;
+
+        > article {
+          // grid-area: article;
+
+          // height: 100%;
+        }
+
+        > .collection {
+          // grid-area: collection;
+
+          > .excerpt {
+            // @include article-banner;
+          }
+        }
+      }
+    }
+  }
+
+}

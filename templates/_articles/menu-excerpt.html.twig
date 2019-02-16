@@ -2,7 +2,19 @@
 {% set excerpt = true %}
 <!-- user/plugins/photon-{{ page.template }}/templates/_articles/{{ page.template }}-excerpt.html.twig -->
   <article class="{{ article.template }} excerpt" data-url="{{ article.url }}">
-    {% include "_articles/_block/article_figure.html.twig" with { 'article': article } %}
-    {% include "_articles/_block/article_header.html.twig" with { 'article': article } %}
-    {% include "_articles/_block/article_main_excerpt.html.twig" with { 'article': article } %}
+    <header>
+      <h1>{{ article.title }}</h1>
+      {% if article.header.subtitle %}
+      <h2>{{ article.header.subtitle }}</h2>
+      {% endif %}
+      
+    </header>
+    <div class="content">
+      {% if article.summary %}
+      <div class="summary">
+        {{ article.summary }}
+        <span class="price">{{ article.header.data.menu.price }}</span>
+      </div>
+      {% endif %}
+    </div>
   </article>

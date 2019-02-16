@@ -4,5 +4,34 @@
 
 article.menu {
 
+  .name {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+
+  .loc {
+    font-variant: small-caps;
+    font-style: normal;
+    font-size: 11pt;
+
+    &::after {
+      content: ' • ';
+    }
+  }
+
+  .abv {
+    font-variant: small-caps;
+    font-style: normal;
+    &::after {
+      content: 'abv';
+      padding-left: .1em;
+    }
+  }
+
+  .recipe {
+    display: none;
+  }
 
 }
