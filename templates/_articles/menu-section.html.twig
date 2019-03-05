@@ -1,0 +1,12 @@
+
+{% set excerpt = true %}
+  <!-- <section class="{{ section.template }}" data-url="{{ section.url }}"> -->
+    <h1>{{ section.title }}</h1>
+    {% for article in section.collection %}
+      {% if article.visible %}
+        {% include ["_articles/#{ article.template }-excerpt.html.twig", "_articles/article-excerpt.html.twig"] with { 'article': article } %}
+      {% endif %}
+    {% endfor %}
+
+
+  <!-- </section> -->

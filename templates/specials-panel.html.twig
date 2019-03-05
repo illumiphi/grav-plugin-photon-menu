@@ -3,48 +3,22 @@
   <header>
     <img class="logo" src="/images/ona-banner.png" alt="logo">
     <div >
-      <h1>Specials</h1>
+      <h1>{{ page.title }}</h1>
       <h2>{{ "now"|date("M d, Y") }}</h2>
 
     </div>
 
   </header>
 
+  {% for section in page.collection %}
+    {% include "_articles/menu-section.html.twig" with { 'section': section } %}
+  {% endfor %}
+
   {% set drinks = page.evaluate([
     {
       '@taxonomy.category': 'drinks'
     }
   ]) %}
-  <h1>Drinks</h1>
-  {% for article in page.collection.intersect(drinks) %}
-    {% if article.visible %}
-      {% include ["_articles/#{ article.template }-excerpt.html.twig", "_articles/article-excerpt.html.twig"] with { 'article': article } %}
-    {% endif %}
-  {% endfor %}
-
-  {% set starters = page.evaluate([{'@taxonomy.category': 'starters'}]) %}
-  <h1>Starters</h1>
-  {% for article in page.collection.intersect(starters) %}
-    {% if article.visible %}
-      {% include ["_articles/#{ article.template }-excerpt.html.twig", "_articles/article-excerpt.html.twig"] with { 'article': article } %}
-    {% endif %}
-  {% endfor %}
-
-  {% set entrees = page.evaluate([{'@taxonomy.category': 'entrees'}]) %}
-  <h1>Entrées</h1>
-  {% for article in page.collection.intersect(entrees) %}
-    {% if article.visible %}
-      {% include ["_articles/#{ article.template }-excerpt.html.twig", "_articles/article-excerpt.html.twig"] with { 'article': article } %}
-    {% endif %}
-  {% endfor %}
-
-  {% set desserts = page.evaluate([{'@taxonomy.category': 'desserts'}]) %}
-  <h1>Desserts</h1>
-  {% for article in page.collection.intersect(desserts) %}
-    {% if article.visible %}
-      {% include ["_articles/#{ article.template }-excerpt.html.twig", "_articles/article-excerpt.html.twig"] with { 'article': article } %}
-    {% endif %}
-  {% endfor %}
 
   <footer>
     <p>* contains raw egg</p>

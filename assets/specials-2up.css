@@ -33,11 +33,12 @@ body.specials > main footer { padding: 0; text-align: center; }
 body.specials > main footer p { text-align: center; }
 
 @page { margin: 0; size: 8.5in 14in; }
-html { font-size: 12pt; line-height: 1.25em; }
+html { font-size: 12pt; line-height: 1.35em; }
 
 body.specials-2up { width: 8.5in; height: 14in; margin: 0 auto; padding: 0; }
 body.specials-2up main { width: 8.5in; height: 14in; }
 body.specials-2up main .panel { border: none; width: 4.25in; height: 14in; display: flex; flex-flow: column nowrap; }
+body.specials-2up main .panel > header { font-size: 12pt; }
 @media (min-width: 72em) { body.specials-2up { display: flex; } }
 @media (min-width: 90em) { @supports (display: grid) { body.specials-2up > main { display: flex; } } }
 

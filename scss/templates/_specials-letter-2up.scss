@@ -1,7 +1,7 @@
 
 //default - mobile first
 $page_width: 8.5in;
-$page_height: 14in;
+$page_height: 11in;
 
 @page {
   margin: 0;
@@ -10,7 +10,7 @@ $page_height: 14in;
 
 html {
   font-size: 12pt;
-  line-height: 1.25em;
+  line-height: 1.35em;
   // background-color: #EEE;
 }
 
@@ -34,6 +34,10 @@ body.specials-2up {
 
       display: flex;
       flex-flow: column nowrap;
+
+      > header {
+        font-size: 12pt;
+      }
     }
 
   }
@@ -103,5 +107,4 @@ body.specials-2up {
       }
     }
   }
-
 }

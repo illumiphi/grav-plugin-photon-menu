@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   {% block template %}
-    <!-- user/themes/photon/templates/specials-2up.html.twig -->
+    <!-- user/themes/photon/templates/specials-3up.html.twig -->
   {% endblock %}
 
   {% include '_site/head.html.twig' %}
@@ -10,8 +10,8 @@
 
   <body class="article specials specials-2up">
     <main>
-      {% include 'specials-panel.html.twig' with { 'article' :  page }  %}
-      {% include 'specials-panel.html.twig' with { 'article' :  page }  %}
+      {% include 'specials-panel.html.twig' with { 'article' :  article }  %}
+      {% include 'specials-panel.html.twig' with { 'article' :  article }  %}
     </main>
 
     <script>
