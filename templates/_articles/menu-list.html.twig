@@ -1,0 +1,21 @@
+
+{% set excerpt = true %}
+  <!-- <section class="{{ article.template }}" data-url="{{ article.url }}"> -->
+    <h1>{{ article.title }}</h1>
+    {% for item in article.header.data.menu.list %}
+    <article class="excerpt">
+      <h1>{{ item.title }}</h1>
+
+      <div class="content">
+        {% if item.description %}
+        <div class="description">
+          {{ item.description }}
+          <span class="price">{{ item.price }}</span>
+        </div>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+
+
+  <!-- </article> -->

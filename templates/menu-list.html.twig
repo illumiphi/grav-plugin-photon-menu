@@ -1,0 +1,10 @@
+{% extends 'article.html.twig' %}
+{% block body_template_classes %}{{ parent() }} menu{% endblock body_template_classes %}
+
+{% block content %}
+{% include ["_articles/#{ page.template }.html.twig", "_articles/article.html.twig"] with { 'article': page } %}
+{% block collection %}
+
+
+{% endblock collection %}
+{% endblock content %}

@@ -2,25 +2,18 @@
 
   <header>
     <img class="logo" src="/images/ona-banner.png" alt="logo">
-    <div >
+    <div>
       <h1>{{ page.title }}</h1>
       <h2>{{ "now"|date("M d, Y") }}</h2>
-
     </div>
-
   </header>
 
   {% for section in page.collection %}
-    {% include "_articles/menu-section.html.twig" with { 'section': section } %}
+    {% include "menu-section.html.twig" with { 'section': section } %}
   {% endfor %}
 
-  {% set drinks = page.evaluate([
-    {
-      '@taxonomy.category': 'drinks'
-    }
-  ]) %}
 
   <footer>
-    <p>* contains raw egg</p>
+    <p>* contains raw or undercooked items</p>
   </footer>
 </section>

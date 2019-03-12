@@ -1,0 +1,75 @@
+title: Menu List
+@extends:
+    type: article
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        header.data.menu:
+          type: tab
+          title: ✴ Menu List
+          icon: folder
+          text: Enter details for this Menu
+
+          fields:
+
+
+            header.data.menu.list:
+              name: menuList
+              type: list
+              style: vertical
+              label: Menu Items
+              fields:
+                .title:
+                  type: text
+                  label: Title
+                .description:
+                  type: text
+                  label: Description
+                .price:
+                  type: text
+                  label: Price
+                  help: Price for this Menu
+                  size: medium
+                .raw:
+                  type: toggle
+                  label: Contains Raw Items
+                  highlight: 1
+                  default: 0
+                  options:
+                      1: 'Yes'
+                      0: 'No'
+                  validate:
+                      type: bool
+                .gf:
+                  type: toggle
+                  label: Gluten Free
+                  highlight: 1
+                  default: 0
+                  options:
+                      1: 'Yes'
+                      0: 'No'
+                  validate:
+                      type: bool
+                .vegetarian:
+                  type: toggle
+                  label: Vegetarian
+                  highlight: 1
+                  default: 0
+                  options:
+                      1: 'Yes'
+                      0: 'No'
+                  validate:
+                      type: bool
+                .vegan:
+                  type: toggle
+                  label: Vegan
+                  highlight: 1
+                  default: 0
+                  options:
+                      1: 'Yes'
+                      0: 'No'
+                  validate:
+                      type: bool

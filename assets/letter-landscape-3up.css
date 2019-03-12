@@ -32,14 +32,13 @@ body.specials > main > .panel > article > .content > .summary > ul > li:last-chi
 body.specials > main footer { padding: 0; text-align: center; }
 body.specials > main footer p { text-align: center; }
 
-@page { margin: 0; size: 8.5in 11in; }
-html { font-size: 12pt; line-height: 1.35em; }
+@page { margin: 0; size: 11in 8.5in; }
+html { font-size: 12pt; line-height: 1.25em; }
 
-body.specials-2up { width: 8.5in; height: 11in; margin: 0 auto; padding: 0; }
-body.specials-2up main { width: 8.5in; height: 11in; }
-body.specials-2up main .panel { border: none; width: 4.25in; height: 11in; display: flex; flex-flow: column nowrap; }
-body.specials-2up main .panel > header { font-size: 12pt; }
-@media (min-width: 72em) { body.specials-2up { display: flex; } }
-@media (min-width: 90em) { @supports (display: grid) { body.specials-2up > main { display: flex; } } }
+body.specials-3up { width: 11in; height: 8.5in; margin: 0 auto; padding: 0; }
+body.specials-3up main { width: 11in; height: 8.5in; }
+body.specials-3up main .panel { border: none; width: calc(11in/3); height: 8.5in; display: flex; flex-flow: column nowrap; }
+@media (min-width: 72em) { body.specials-3up { display: flex; } }
+@media (min-width: 90em) { @supports (display: grid) { body.specials-3up > main { display: flex; } } }
 
-/*# sourceMappingURL=specials-2up.css.map */
+/*# sourceMappingURL=letter-landscape-3up.css.map */

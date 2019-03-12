@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% block template %}
+    <!-- user/themes/photon/templates/specials-2up.html.twig -->
+  {% endblock %}
+
+  {% include '_site/head.html.twig' %}
+
+
+  <body class="article specials letter-portrait-2up">
+    <main>
+      {% include 'specials-panel.html.twig' with { 'article' :  page }  %}
+      {% include 'specials-panel.html.twig' with { 'article' :  page }  %}
+    </main>
+
+    <script>
+
+      var d = new Date();
+      document.title = "Specials " + (
+        d.getMonth() + 1
+      ) + '-' + d.getDate() + '-' + d.getFullYear() + " 2up";
+    </script>
+
+  </body>
+</html>
