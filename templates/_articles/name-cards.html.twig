@@ -1,0 +1,34 @@
+{% set excerpt = true %}
+<!-- <section class="{{ article.template }}" data-url="{{ article.url }}"> -->
+<!-- <h1>{{ article.title }}</h1> -->
+<section class="collection">
+
+  {% for item in article.header.data.namecards %}
+    <article class="name-card">
+      <div class="front">
+        <h1>{{ item.name }}</h1>
+
+      </div>
+      <div class="back">
+
+        <h1>{{ item.name }}</h1>
+        <div class="content">
+          {% if item.starter %}
+            <div class="starter">
+              {{ item.starter }}
+            </div>
+          {% endif %}
+          {% if item.entree %}
+            <div class="entree">
+              {{ item.entree }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+    </article>
+  {% endfor %}
+
+</section>
+
+<!-- </article> -->

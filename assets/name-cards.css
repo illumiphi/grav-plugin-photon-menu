@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* photon ✴ menu Components and Templates */
+@page { margin: 0; size: 8.5in 11in; }
+body.name-cards { padding: 0; margin: 0; }
+body.name-cards > main { width: 100%; margin: 0; display: flex; flex-flow: column; position: relative; }
+body.name-cards > main > * { margin: var(--fitz); }
+body.name-cards > main > .collection { width: 8.5in; flex-flow: row; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, calc(8.5in/3)); grid-auto-rows: calc(11in/3); justify-content: center; transition: position 0.5s; }
+body.name-cards > main > .collection > * { margin: 0; }
+body.name-cards > main > .collection > article { /* article-card */ display: flex; /* extends article.banner */ text-align: center; border: 1px #EEE solid; }
+body.name-cards > main > .collection > article > figure > img { width: 100%; height: 100%; height: calc(var(--col) - 2em); }
+body.name-cards > main > .collection > article > header { text-align: center; }
+body.name-cards > main > .collection > article > header > * { text-align: center; }
+body.name-cards > main > .collection > article > .content { align-content: flex-start; }
+body.name-cards > main > .collection > article > footer { flex-flow: column nowrap; }
+body.name-cards > main > .collection > article > footer > aside { padding: 0; }
+body.name-cards > main > .collection > article > footer > aside > h1 { display: none; }
+body.name-cards > main > .collection > article > footer > aside ul, body.name-cards > main > .collection > article > footer > aside li { display: inline; }
+body.name-cards > main > .collection > article > footer > nav { text-align: right; padding: 0; align-self: flex-end; justify-content: right; }
+body.name-cards > main > .collection > article > footer .more { margin: 0 auto; text-align: center; display: block; }
+body.name-cards > main > .collection > article h1 { padding-left: 0.2em; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 400; }
+body.name-cards > main > .collection > article .front, body.name-cards > main > .collection > article .back { height: calc(11in/6); padding: .5em; display: flex; justify-content: space-around; flex-flow: column; }
+body.name-cards > main > .collection > article .front { transform: rotate(180deg); }
+body.name-cards > main > .collection > article .back .content { text-align: center; }
+
+@media print { body > header { display: none; } }
+
+/*# sourceMappingURL=name-cards.css.map */

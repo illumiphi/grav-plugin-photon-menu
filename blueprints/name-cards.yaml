@@ -1,0 +1,31 @@
+title: Name Cards
+@extends:
+    type: article
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        _namecards:
+          type: tab
+          title: ✴ Name Cards
+          icon: folder
+          text: Enter names and food choices
+
+          fields:
+
+            header.data.namecards:
+              type: list
+              style: vertical
+              label: Name Cards
+              fields:
+                .name:
+                  type: text
+                  label: Name
+                .starter:
+                  type: text
+                  label: Starter
+                .entree:
+                  type: text
+                  label: Entree

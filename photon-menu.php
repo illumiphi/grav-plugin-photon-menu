@@ -135,6 +135,19 @@ class PhotonMenuPlugin extends Plugin
         }
       }
 
+      if ($page->template() == 'name-cards') {
+
+        if ($this->config->get('plugins.photon-menu.built_in_css')) {
+          $css = 'plugin://photon-menu/assets/name-cards.css';
+          $assets->addCss($css, 100, false, 'photon-plugins' );
+        }
+
+        if ($this->config->get('plugins.photon-menu.built_in_js')) {
+          $js = 'plugin://photon-menu/assets/specials.js';
+          // $assets->addJs($js, 100, false, 'defer', 'photon-plugins' );
+        }
+      }
+
     }
 
 }
