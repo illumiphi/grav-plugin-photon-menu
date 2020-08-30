@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+PhotonMenuPlugin	photon-menu.php	/^class PhotonMenuPlugin extends Plugin$/;"	c
+assets	photon-menu.php	/^      $assets = 		$this->grav['assets'];$/;"	v
+css	photon-menu.php	/^          $css = 'plugin:\/\/photon-menu\/assets\/menu.css';$/;"	v
+css	photon-menu.php	/^          $css = 'plugin:\/\/photon-menu\/assets\/name-cards.css';$/;"	v
+css	photon-menu.php	/^          $css = 'plugin:\/\/photon-menu\/assets\/specials-2up.css';$/;"	v
+css	photon-menu.php	/^          $css = 'plugin:\/\/photon-menu\/assets\/specials-3up.css';$/;"	v
+css	photon-menu.php	/^          $css = 'plugin:\/\/photon-menu\/assets\/specials.css';$/;"	v
+getSubscribedEvents	photon-menu.php	/^    public static function getSubscribedEvents()$/;"	f
+js	photon-menu.php	/^          $js = 'plugin:\/\/photon-menu\/assets\/menu.js';$/;"	v
+js	photon-menu.php	/^          $js = 'plugin:\/\/photon-menu\/assets\/specials.js';$/;"	v
+locator	photon-menu.php	/^        $locator = Grav::instance()['locator'];$/;"	v
+onAdminSave	photon-menu.php	/^    public function onAdminSave(Event $event)$/;"	f
+onGetPageTemplates	photon-menu.php	/^    public function onGetPageTemplates(Event $event)$/;"	f
+onPluginsInitialized	photon-menu.php	/^    public function onPluginsInitialized()$/;"	f
+onTwigSiteVariables	photon-menu.php	/^    public function onTwigSiteVariables()$/;"	f
+onTwigTemplatePaths	photon-menu.php	/^    public function onTwigTemplatePaths()$/;"	f
+page	photon-menu.php	/^      $page = 			$this->grav['page'];$/;"	v
+pages	photon-menu.php	/^      $pages = 			$this->grav['pages'];$/;"	v
+twig	photon-menu.php	/^      $twig = 			$this->grav['twig'];$/;"	v
+types	photon-menu.php	/^        $types = $event->types;$/;"	v
