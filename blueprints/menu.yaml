@@ -1,5 +1,5 @@
 title: Menu
-@extends:
+'@extends':
     type: article
     context: blueprints://pages
 

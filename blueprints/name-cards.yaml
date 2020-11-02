@@ -1,5 +1,5 @@
 title: Name Cards
-@extends:
+'@extends':
     type: article
     context: blueprints://pages
 

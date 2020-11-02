@@ -1,15 +1,14 @@
 name: photon ✴ Menu
 version: 0.1.0
 description: datatype
-icon: asterisk
 author:
-  name: illumiphi
+  name: phi ARCHITECT
   email: phi@illumiphi.com
-homepage: https://github.com/i-am-phi/grav-plugin-photon-menu
-demo: https://illumiphi.com
-keywords: datatype, photon
-bugs: https://github.com/i-am-phi/grav-plugin-photon-menu/issues
+homepage: https://github.com/photon-platform/grav-plugin-photon-menu
 docs: https://github.com/i-am-phi/grav-plugin-photon-menu/blob/develop/README.md
+bugs: https://github.com/i-am-phi/grav-plugin-photon-menu/issues
+keywords: datatype, photon
+icon: asterisk
 license: MIT
 
 dependencies:
